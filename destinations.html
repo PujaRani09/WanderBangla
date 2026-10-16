@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destinations | WanderBangla</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                Wander<span>Bangla</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <p class="label">EXPLORE BANGLADESH</p>
+
+            <h1>Places worth <span>visiting.</span></h1>
+
+            <p>
+                Discover the natural beauty and culture of Bangladesh.
+            </p>
+        </section>
+
+
+        <!-- Destinations Section -->
+        <section class="section soft-bg">
+
+            <!-- Search and Filter -->
+            <div class="destination-tools">
+
+                <!-- Search Box -->
+                <div class="destination-search">
+
+                    <input
+                        type="search"
+                        id="destinationSearch"
+                        placeholder="Search destinations..."
+                        aria-label="Search destinations"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="searchButton"
+                        aria-label="Search destinations"
+                        title="Search"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="16" y1="16" x2="21" y2="21"></line>
+                        </svg>
+                    </button>
+
+                </div>
+
+
+                <!-- Category Filters -->
+                <div class="destination-filters">
+
+                    <button
+                        type="button"
+                        class="filter-btn active"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        All Places
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="sea"
+                        aria-pressed="false"
+                    >
+                        Sea &amp; Island
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="green"
+                        aria-pressed="false"
+                    >
+                        Green &amp; Forest
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="hills"
+                        aria-pressed="false"
+                    >
+                        Hills
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="adventure"
+                        aria-pressed="false"
+                    >
+                        Adventure
+                    </button>
+
+                </div>
+
+                <p id="destinationCount" aria-live="polite"></p>
+
+            </div>
+
+
+            <!-- Destination Cards -->
+            <div class="destination-grid" id="destinationGrid">
+
+                <!-- 1. Cox's Bazar -->
+                <article class="destination-card" data-category="sea">
+
+                    <img
+                        src="images/coxsbazar.jpg"
+                        alt="Cox's Bazar beach"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <p class="label">01 / SEA</p>
+
+                        <h3>Cox's Bazar</h3>
+
+                        <p>
+                            Relax by the long sandy beach and enjoy
+                            beautiful sunsets.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://en.wikipedia.org/wiki/Cox%27s_Bazar"
+                        >
+                            Learn more →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- 2. Sylhet -->
+                <article class="destination-card" data-category="green">
+
+                    <img
+                        src="images/sylhet.jpg"
+                        alt="Sylhet tea garden"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <p class="label">02 / GREEN</p>
+
+                        <h3>Sylhet</h3>
+
+                        <p>
+                            Explore tea gardens, waterfalls and
+                            green landscapes.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://en.wikipedia.org/wiki/Sylhet"
+                        >
+                            Learn more →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- 3. Sajek Valley -->
+                <article class="destination-card" data-category="hills">
+
+                    <img
+                        src="images/sajek.jpg"
+                        alt="Sajek Valley"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <p class="label">03 / HILLS</p>
+
+                        <h3>Sajek Valley</h3>
+
+                        <p>
+                            Enjoy mountain views, clouds and
+                            peaceful surroundings.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://en.wikipedia.org/wiki/Sajek_Valley"
+                        >
+                            Learn more →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- 4. Bandarban -->
+                <article class="destination-card" data-category="adventure">
+
+                    <img
+                        src="images/bandarban.jpg"
+                        alt="Bandarban hills"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <p class="label">04 / ADVENTURE</p>
+
+                        <h3>Bandarban</h3>
+
+                        <p>
+                            Discover magnificent hills and
+                            adventurous trails.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://en.wikipedia.org/wiki/Bandarban_District"
+                        >
+                            Learn more →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- 5. Sundarbans -->
+                <article class="destination-card" data-category="green">
+
+                    <img
+                        src="images/sundarbans.jpg"
+                        alt="Sundarbans forest"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <p class="label">05 / WILD</p>
+
+                        <h3>Sundarbans</h3>
+
+                        <p>
+                            Explore mangrove forests and
+                            incredible wildlife.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://en.wikipedia.org/wiki/Sundarbans"
+                        >
+                            Learn more →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- 6. Saint Martin -->
+                <article class="destination-card" data-category="sea">
+
+                    <img
+                        src="images/saintmartin.jpg"
+                        alt="Saint Martin Island"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <p class="label">06 / ISLAND</p>
+
+                        <h3>Saint Martin</h3>
+
+                        <p>
+                            Experience island scenery, beaches
+                            and blue water.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://en.wikipedia.org/wiki/Saint_Martin%27s_Island"
+                        >
+                            Learn more →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- 7. Ratargul -->
+                <article class="destination-card" data-category="green">
+
+                    <img
+                        src="images/ratargul.jpg"
+                        alt="Ratargul swamp forest"
+                        loading="lazy"
+                    >
+
+                    <div class="card-body">
+                        <p class="label">07 / FOREST</p>
+
+                        <h3>Ratargul</h3>
+
+                        <p>
+                            Discover a unique freshwater
+                            swamp forest.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://en.wikipedia.org/wiki/Ratargul_Swamp_Forest"
+                        >
+                            Learn more →
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- No Search Results -->
+            <p id="noDestinations" hidden>
+                No destinations found. Try another search.
+            </p>
+
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="cta">
+
+            <h2>Found your destination?</h2>
+
+            <p>Choose a journey that suits your budget.</p>
+
+            <a href="packages.html" class="btn">
+                View Travel Packages →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <a class="logo footer-logo" href="index.html">
+            Wander<span>Bangla</span>
+        </a>
+
+        <p>Discover Bangladesh. Create your own story.</p>
+
+        <p class="copyright">
+            © 2026 WanderBangla. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

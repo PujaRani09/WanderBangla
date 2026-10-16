@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Trip | WanderBangla</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">
+            Wander<span>Bangla</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Booking Page Hero -->
+    <section class="page-hero">
+        <p class="label">YOUR ADVENTURE STARTS HERE</p>
+
+        <h1>Book your <span>journey.</span></h1>
+
+        <p>Fill out the form with your preferred trip details.</p>
+    </section>
+
+
+    <!-- Booking Form Section -->
+    <section class="section booking-section">
+
+        <form
+            class="booking-form"
+            id="bookingForm"
+            action="#"
+            method="get"
+            novalidate
+        >
+
+            <h2>Travel Booking Form</h2>
+
+            <p>Please provide your travel information.</p>
+
+
+            <!-- Full Name -->
+            <label for="fullname">Full Name</label>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+            >
+
+            <small class="error" id="nameError"></small>
+
+
+            <!-- Email -->
+            <label for="booking-email">Email Address</label>
+
+            <input
+                type="email"
+                id="booking-email"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+            >
+
+            <small class="error" id="emailError"></small>
+
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="01XXXXXXXXX or +8801XXXXXXXXX"
+                autocomplete="tel"
+                required
+            >
+
+            <small class="error" id="phoneError"></small>
+
+
+            <!-- Destination -->
+            <label for="destination">Choose Destination</label>
+
+            <select
+                id="destination"
+                name="destination"
+                required
+            >
+                <option value="">Select a destination</option>
+                <option value="Cox's Bazar">Cox's Bazar</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Bandarban">Bandarban</option>
+                <option value="Sajek Valley">Sajek Valley</option>
+                <option value="Sundarbans">Sundarbans</option>
+                <option value="Ratargul">Ratargul</option>
+                <option value="Saint Martin">Saint Martin</option>
+                <option value="Chittagong">Chittagong</option>
+            </select>
+
+            <small class="error" id="destinationError"></small>
+
+
+            <!-- Travel Date -->
+            <label for="travel-date">Preferred Travel Date</label>
+
+            <input
+                type="date"
+                id="travel-date"
+                name="travel_date"
+                required
+            >
+
+            <small class="error" id="dateError"></small>
+
+
+            <!-- Number of Travellers -->
+            <label for="people">Number of Travellers</label>
+
+            <input
+                type="number"
+                id="people"
+                name="people"
+                min="1"
+                max="50"
+                value="1"
+                required
+            >
+
+            <small class="error" id="travelersError"></small>
+
+
+            <!-- Special Requests -->
+            <label for="requests">Special Requests</label>
+
+            <textarea
+                id="requests"
+                name="requests"
+                rows="4"
+                placeholder="Any additional requirements?"
+            ></textarea>
+
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">
+                Submit Booking Request →
+            </button>
+
+
+            <!-- Validation Result -->
+            <p
+                id="formMessage"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+
+            <!-- Demo Notice -->
+            <p class="notice">
+                Demo only: this form validates your information but does
+                not confirm a reservation or save booking data.
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+    <a class="logo footer-logo" href="index.html">
+        Wander<span>Bangla</span>
+    </a>
+
+    <p>Discover Bangladesh. Create your own story.</p>
+
+    
+
+    <p class="copyright">
+        © 2026 WanderBangla. All rights reserved.
+    </p>
+</footer>
+
+
+<!-- JavaScript Validation -->
+<script src="script.js"></script>
+
+</body>
+</html>
